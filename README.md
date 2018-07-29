@@ -1,8 +1,8 @@
 # Semantic Soft Segmentation, ACM SIGGRAPH 2018
 
 This repository includes the Tensorflow implementation of the semantic feature extraction part used in \[Semantic Soft Segmentation (Yağız et al., 2018)\] [Project page](http://people.inf.ethz.ch/aksoyy/sss/).
+This implementation is only for the feature extraction as a test phase, not training.
 Remaining code can be found in blabla.
-
 
 
 # Requirement
@@ -22,8 +22,8 @@ pip3 install -r requirements.txt
 
 
 # Note
-** Input image files should be PNG file formats at this point. **
-
+** At this point, only PNG image format is supported at the image loader. **
+** This code is only for the test phase, and does not include training code. **
  
 
 # Citation
@@ -40,6 +40,7 @@ volume = {37},
 number = {4}
 }
 ```
+This code is for protyping research ideas; thus, please use this code only for non-commercial purpose only.  
 
 # Credit
 The part of the base codes (the tools in the "deeplab_resnet" directory) are borrowed from [(Re-)implementation of DeepLab-ResNet-TensorFlow](https://github.com/DrSleep/tensorflow-deeplab-resnet#using-your-dataset)
