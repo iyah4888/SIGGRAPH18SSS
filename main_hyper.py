@@ -1,5 +1,10 @@
 """
+@author: Tae-Hyun Oh (http://taehyunoh.com, taehyun@csail.mit.edu)
+@date: Jul 29, 2018
+@description: This is a part of the semantic feature extraction implementation used in 
+[Semantic Soft Segmentation (Yağız et al., 2018)] (project page: http://people.inf.ethz.ch/aksoyy/sss/).
 This code is modified from the implementation by DrSleep (https://github.com/DrSleep/tensorflow-deeplab-resnet)
+This code is for protyping research ideas; thus, please use this code only for non-commercial purpose only.  
 """
 
 from __future__ import print_function
