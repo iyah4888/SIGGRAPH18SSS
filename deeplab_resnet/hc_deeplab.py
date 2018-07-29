@@ -1,5 +1,9 @@
 """
-Implemented by Tae-Hyun Oh.
+@author: Tae-Hyun Oh (http://taehyunoh.com, taehyun@csail.mit.edu)
+@date: Jul 29, 2018
+@description: This is a part of the semantic feature extraction implementation used in 
+[Semantic Soft Segmentation (Yağız et al., 2018)] (project page: http://people.inf.ethz.ch/aksoyy/sss/).
+This code is for protyping research ideas; thus, please use this code only for non-commercial purpose only.  
 """
 
 
@@ -98,6 +102,7 @@ class HyperColumn_Deeplabv2(Model):
 		visimg = tf.truediv(visualized - minval, maxval-minval)*255.0
 		return visimg
 
+# Deprecated
 	def lossfunction(self, tweightmat, tindicator, tembeddings):
 
 		with tf.variable_scope('loss_computation') as scope:
@@ -174,7 +179,7 @@ class HyperColumn_Deeplabv2(Model):
 
 
 
-
+# Deprecated
 	def setup_optimizer(self):
 
 		args = self.args
@@ -234,7 +239,7 @@ class HyperColumn_Deeplabv2(Model):
 
 
 
-
+# Deprecated
 	def train(self):
 		"""Training code.
 		"""
