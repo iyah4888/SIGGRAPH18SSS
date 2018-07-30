@@ -1,12 +1,18 @@
 # Semantic Soft Segmentation, ACM SIGGRAPH 2018
 
-This repository includes the Tensorflow implementation of the semantic feature extraction part used in \[Semantic Soft Segmentation (Yağız et al., 2018)\] [Project page](http://people.inf.ethz.ch/aksoyy/sss/).
-This implementation is only for the feature extraction as a test phase, not training.
-Remaining code can be found in blabla.
+This repository includes the semantic feature generation approach presented in
 
+    Yagiz Aksoy, Tae-Hyun Oh, Sylvain Paris, Marc Pollefeys and Wojciech Matusik, "Semantic Soft Segmentation", ACM Transactions on Graphics (Proc. SIGGRAPH), 2018 
 
-# Requirement
+The spectral segmentation implementation can be found [[here](https://github.com/yaksoy/SemanticSoftSegmentation)].
+
+Please refer to the [[project page](http://people.inf.ethz.ch/aksoyy/sss/)] for more information.
+
+Note that only the feature generator is presented in this repository and the training code is not included.
+
+# Requirements
 Python 3.6, TensorFlow >= 1.4 and other common packages listed in requirements.txt.
+
 The code has been tested on {Linux Ubuntu 16.04, TensorFlow-GPU 1.4} and {Windows 10, TensorFlow-GPU 1.8}.
 
 # Installation
@@ -21,10 +27,8 @@ pip3 install -r requirements.txt
 5. Run "run_extract_feat.sh", which will process sample images in the "samples" folder. If you want to run your own images, notice that image files should be the PNG formats.
 
 
-# Note
-** At this point, only PNG image format is supported at the image loader. **
-** This code is only for the test phase, and does not include training code. **
- 
+# Notes
+At this point, only PNG image format is supported at the image loader.
 
 # Citation
 If you use this code, please cite our paper:
@@ -42,7 +46,7 @@ number = {4}
 ```
 This code is for protyping research ideas; thus, please use this code only for non-commercial purpose only.  
 
-# Credit
+# Credits
 The part of the base codes (the tools in the "deeplab_resnet" directory) are borrowed from [(Re-)implementation of DeepLab-ResNet-TensorFlow](https://github.com/DrSleep/tensorflow-deeplab-resnet#using-your-dataset)
 Likewise, our code (the tools in "kaffe" directory) is benefited from [Caffe to TensorFlow](https://github.com/ethereon/caffe-tensorflow)
 
