@@ -4,7 +4,7 @@ This repository includes the semantic feature (128-D) generation approach presen
 
     Yagiz Aksoy, Tae-Hyun Oh, Sylvain Paris, Marc Pollefeys and Wojciech Matusik, "Semantic Soft Segmentation", ACM Transactions on Graphics (Proc. SIGGRAPH), 2018 
 
-Also, note that this repository is not **stand-alone**. 
+Also, note that this repository is NOT **stand-alone**. 
 The spectral segmentation implementation can be found [[here](https://github.com/yaksoy/SemanticSoftSegmentation)].
 The low-dimension projection to 3-dimension and its filtering code are available in the repository.
 
