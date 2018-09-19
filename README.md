@@ -15,7 +15,7 @@ Note that only the feature generator is presented in this repository and the tra
 # Requirements
 Python 3.6, TensorFlow >= 1.4 and other common packages listed in requirements.txt.
 
-The code has been tested on {Linux Ubuntu 16.04, TensorFlow-GPU 1.4} and {Windows 10, TensorFlow-GPU 1.8}.
+The code has been tested on {Linux Ubuntu 16.04, TensorFlow-GPU 1.4} and {Windows 10, TensorFlow-GPU 1.8} with Titan Xp.
 
 # Installation
 1. Install dependencies
