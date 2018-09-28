@@ -34,8 +34,8 @@ Helper functions
 
 def load_dir_structs(dataset_path):
 	# Get list of subdirs
-	# types = ('*.jpg', '*.png')	# jpg is not supported yet by read_img()
-	types = ('*.png')
+	types = ('*.jpg', '*.png')	# jpg is not supported yet by read_img()
+	#types = ('*.png',)
 	
 	curflist= []
 	for files in types:
@@ -63,7 +63,7 @@ def read_img(t_imgfname, input_size, img_mean): # optional pre-processing argume
 
 	img_contents = tf.read_file(t_imgfname)
 	
-	img = tf.image.decode_png(img_contents, channels=3)
+	img = tf.image.decode_image(img_contents, channels=3)
 	img_r, img_g, img_b = tf.split(axis=2, num_or_size_splits=3, value=img)
 	img = tf.cast(tf.concat(axis=2, values=[img_b, img_g, img_r]), dtype=tf.float32)
 	# Extract mean.
@@ -109,6 +109,7 @@ if __name__ == "__main__":
 
 			print('{} Processing {}'.format(i, local_imgflist[i]))
 			padsize = 50
+			# the following read_img() calls could lead to a memory leakage-like issue or at least very slow. (need to be fixed later)
 			_, ori_img = read_img(local_imgflist[i], input_size = None, img_mean = IMG_MEAN)
 			pad_img = tf.pad(ori_img, [[padsize,padsize], [padsize,padsize], [0,0]], mode='REFLECT')
 			cur_embed = model.test(pad_img.eval())
