@@ -30,7 +30,8 @@ pip3 install -r requirements.txt
 
 
 # Notes
-At this point, only PNG image format is supported in the image loader.
+```At this point, only PNG image format is supported in the image loader.```
+None
 
 # Citation
 If you use this code, please cite our paper:
