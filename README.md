@@ -30,7 +30,7 @@ pip3 install -r requirements.txt
 
 
 # Notes
-None
+Currently, the code only supports the PNG file format.
 
 # Citation
 If you use this code, please cite our paper:
