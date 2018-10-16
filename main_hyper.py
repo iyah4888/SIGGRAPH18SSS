@@ -34,8 +34,8 @@ Helper functions
 
 def load_dir_structs(dataset_path):
 	# Get list of subdirs
-	types = ('*.jpg', '*.png')	# jpg is not supported yet by read_img()
-	#types = ('*.png',)
+# 	types = ('*.jpg', '*.png')	# jpg is not supported yet by read_img()
+	types = ('*.png',)
 	
 	curflist= []
 	for files in types:
@@ -63,7 +63,8 @@ def read_img(t_imgfname, input_size, img_mean): # optional pre-processing argume
 
 	img_contents = tf.read_file(t_imgfname)
 	
-	img = tf.image.decode_image(img_contents, channels=3)
+# 	img = tf.image.decode_image(img_contents, channels=3)
+	img = tf.image.decode_png(img_contents, channels=3)
 	img_r, img_g, img_b = tf.split(axis=2, num_or_size_splits=3, value=img)
 	img = tf.cast(tf.concat(axis=2, values=[img_b, img_g, img_r]), dtype=tf.float32)
 	# Extract mean.
