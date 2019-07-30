@@ -1,3 +1,6 @@
+## Important Note:
+**This repository alone is not a complete code. Please also check the repository for segmentation part [[here](https://github.com/yaksoy/SemanticSoftSegmentation)]**
+
 # Semantic Soft Segmentation, ACM SIGGRAPH 2018
 
 This repository includes the semantic feature (128-D) generation approach presented in
