@@ -1,5 +1,6 @@
 ## Important Note:
 **This repository alone is not a complete code. Please also check the repository for segmentation part [[here](https://github.com/yaksoy/SemanticSoftSegmentation)]**
+**Also, please readme README carefully.**
 
 # Semantic Soft Segmentation, ACM SIGGRAPH 2018
 
