@@ -1,3 +1,5 @@
+# - *- coding: utf- 8 - *-
+
 """
 @author: Tae-Hyun Oh (http://taehyunoh.com, taehyun@csail.mit.edu)
 @date: Jul 29, 2018
